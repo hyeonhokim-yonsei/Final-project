@@ -24,3 +24,19 @@
 
 - 해석학 수업에서 배운 급수의 수렴 개념을 직접 파이썬 코드로 체험할 수 있다.
 - 수렴과 발산의 의미를 단순 계산을 통해 체험함으로써 수학적 직관을 기를 수 있다.
+
+## 🔍 실행 예시 (Examples)
+
+아래는 `series_convergence()` 함수를 이용하여 다양한 일반항 aₙ에 대해 무한급수의 수렴 여부를 판단한 예시이다.
+
+
+from convergence_checker import series_convergence
+
+f = lambda n: 1 / (n**2)
+result = series_convergence(f)
+
+print("수렴 여부:", result[0])
+print("근사 합:", result[1])
+
+수렴 여부: True
+근사 합: 1.6448340718480652
